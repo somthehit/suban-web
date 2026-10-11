@@ -1,0 +1,247 @@
+{
+  "brand": {
+    "siteName": "SUBAN CHAUDHARY",
+    "slogan": "Wildlife Photography",
+    "logoUrl": "/uploads/site/3ca7d8c2-5063-4b2a-88a8-efac414b9e88-1791641611256-fnmyq.png",
+    "watermarkText": "© SUBAN WILDLIFE PHOTOGRAPHY",
+    "hubsText": "Nepal • Shuklaphanta • Kathmandu",
+    "copyrightText": "SUBAN Wildlife Fine Art Photography. All Rights Reserved."
+  },
+  "navigation": {
+    "items": [
+      {
+        "id": "nav-gallery",
+        "href": "/gallery",
+        "label": "Gallery & Shop"
+      },
+      {
+        "id": "nav-collections",
+        "href": "/collections",
+        "label": "Curated Collections"
+      },
+      {
+        "id": "nav-blog",
+        "href": "/blog",
+        "label": "Field Journal"
+      },
+      {
+        "id": "nav-licensing",
+        "href": "/licensing",
+        "label": "Licensing"
+      },
+      {
+        "id": "nav-about",
+        "href": "/about",
+        "label": "About"
+      }
+    ],
+    "showCurrencyToggle": true,
+    "showCart": true,
+    "sticky": true
+  },
+  "footer": {
+    "aboutText": "Pristine photographic chronicles capturing Earth's untamed apex predators and endangered habitats with cinematic visual fidelity.",
+    "watermarkNotice": "All visual media registered via encrypted digital provenance. Unauthorized reproduction, AI ingestion, or commercial distribution strictly prohibited.",
+    "dispatcherTitle": "Field Dispatch Dispatcher",
+    "dispatcherDesc": "Receive private viewings of upcoming releases, nocturnal captures, and print reservation slots.",
+    "licenseTermsUrl": "/licensing",
+    "privacyUrl": "/about"
+  },
+  "social": {
+    "instagram": "https://instagram.com",
+    "vimeo": "https://vimeo.com",
+    "px500": "https://500px.com",
+    "twitter": "https://x.com",
+    "youtube": "https://youtube.com",
+    "email": "suban@subanwildlife.com",
+    "customLinks": []
+  },
+  "about": {
+    "naturalistName": "Suban Dahit",
+    "title": "Expedition Naturalist & Wildlife Photojournalist",
+    "baseStation": "Base: Shuklaphanta & Bardia Field Station",
+    "credentials": "Official Member: International League of Conservation Photographers (Affiliate) • National Geographic Contributor",
+    "portraitUrl": "https://scontent.fdhi1-1.fna.fbcdn.net/v/t39.30808-6/832916643_4456096511309642_6246512564612285707_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHCouSIkHgn6_z8CBJErM6hIakqRavewkIhqSpFq97CQiiiI0D5D9r47L7eLiiQ1uzXSCkExyeRqdlgoEyZ8M3k&_nc_ohc=VCasTVv-bjUQ7kNvwHDyQ8c&_nc_oc=Ado5k31qcc-f8eErqF0Y6KKcHidS3R2cSOXANCzxjY2pbcXB2SbCMdfSjl6AUDXpFF2WtuFINWPHxw5RtmlUBcOZ&_nc_zt=23&_nc_ht=scontent.fdhi1-1.fna&_nc_gid=NPUmomB3BYRs_3ZOLV_1rQ&_nc_ss=7b2a8&oh=00_AQOtARc4_JGEGYrM3lg3yFKAbL4z5ZgboqgOBNXkhUkVAA&oe=6ACB2A81",
+    "heroHeadline": "Aim, Passion, and",
+    "heroGradientText": "Life in the Wild",
+    "bioParagraph": "I am Suban Dahit, a Nepali wildlife photojournalist dedicated to documenting the fragile altitudinal gradients of the Himalayas and the lowland Terai. From dense subtropical Sal riverbanks (68m) to frost-shattered Tibetan plateau passes (5,400m), my work bridges rigorous scientific observation and fine art storytelling.",
+    "metrics": {
+      "maxAltitude": "5,430m",
+      "masterPlates": "148",
+      "royaltyPercent": "10%",
+      "fieldExperience": "8+ Yrs"
+    },
+    "manifestoBadge": "The Field Manifesto",
+    "manifestoQuote": "“We do not stage moments in the wild; we endure the freeze, the damp, and weeks of absolute stillness until the wild chooses to reveal itself.”",
+    "manifestoText": "Wildlife photography is not about conquest or lens specs—it is about biological empathy. When an apex predator looks into your lens, it is calculating whether your presence threatens its territory. Our strict policy is that when we pack up our hides, the animal must never have altered its feeding, mating, or resting habits because of us.",
+    "ethics": [
+      {
+        "id": "ethic-1",
+        "icon": "nature",
+        "title": "Zero Baiting & Calling",
+        "description": "Every recorded frame depicts 100% natural, unmanipulated wildlife behavior. We never use carcass bait, live lures, acoustic calls, or salt licks to attract animals."
+      },
+      {
+        "id": "ethic-2",
+        "icon": "videocam_off",
+        "title": "Non-Disruptive Drone Ban",
+        "description": "Complete 100% exclusion of aerial drones in active buffer sanctuaries. Aerial prop noise induces acute cortisol stress spikes in big cats and avian raptors."
+      },
+      {
+        "id": "ethic-3",
+        "icon": "shield_lock",
+        "title": "GPS Coordinate Obfuscation",
+        "description": "Raw telemetry and precise nest coordinates of critically endangered species are systematically scrubbed and encrypted to prevent illegal poaching exploitation."
+      },
+      {
+        "id": "ethic-4",
+        "icon": "volunteer_activism",
+        "title": "The 10% Community Royalty",
+        "description": "Exactly 10% of every print acquisition, publication fee, and licensing contract goes directly into community anti-poaching patrols (CBAPU) and park ranger welfare."
+      }
+    ],
+    "expeditions": [
+      {
+        "id": "exp-1",
+        "tag": "Cloud Forest Biome",
+        "desc": "Documenting the endangered Red Panda navigating ancient moss-covered oak and rhododendron canopies in torrential mid-monsoon rainfall without artificial light.",
+        "year": "2024",
+        "title": "Monsoon Mist: Cloud Forest Red Panda Study",
+        "region": "Eastern Ilam / Mai Pokhari",
+        "altitude": "2,400m AMSL"
+      },
+      {
+        "id": "exp-2",
+        "tag": "Apex Carnivore",
+        "desc": "Four weeks in camouflaged drift-wood blinds along sub-zero gravel crossings, resulting in the iconic direct ocular portrait of dominant male T-14 at 48 meters.",
+        "year": "2023",
+        "title": "The Stare: Royal Bengal Tiger Riverbank Watch",
+        "region": "Babai Valley, Bardia National Park",
+        "altitude": "152m AMSL"
+      },
+      {
+        "id": "exp-3",
+        "tag": "Avian Raptor Study",
+        "desc": "Tracking bearded vultures and Himalayan griffons riding gale-force mountain vortexes and thermal updrafts across sheer limestone red canyons.",
+        "year": "2022",
+        "title": "Wings Across the Himalaya: Lammergeier Dynamics",
+        "region": "Mustang Trans-Himalayan Corridor",
+        "altitude": "3,900m AMSL"
+      },
+      {
+        "id": "exp-4",
+        "tag": "Sub-Zero Alpine",
+        "desc": "A grueling 38-day sub-zero winter bivouac across jagged moraines, capturing the solitary phantom traversing wind-blasted ridges during snow squalls.",
+        "year": "2021",
+        "title": "Monarchs of the High Passes: Winter Snow Leopard",
+        "region": "Shey-Phoksundo & High Dolpo",
+        "altitude": "4,850m – 5,430m AMSL"
+      }
+    ],
+    "gear": [
+      {
+        "id": "gear-1",
+        "item": "Nikon Z9 Flagship",
+        "details": "Dual CFexpress Type B • 45.7MP Stacked CMOS • 0.0dB Silent Electronic Shutter",
+        "category": "Primary Bodies"
+      },
+      {
+        "id": "gear-2",
+        "item": "Nikkor Z 400mm f/2.8 TC VR S",
+        "details": "Built-in 1.4x internal teleconverter (effective 560mm f/4) • Fluorite elements",
+        "category": "Super Telephoto"
+      },
+      {
+        "id": "gear-3",
+        "item": "Nikkor Z 800mm f/6.3 VR S",
+        "details": "Phase Fresnel optics • Handholdable sub-zero alpine tracking glass",
+        "category": "High Altitude Extreme"
+      },
+      {
+        "id": "gear-4",
+        "item": "32-Bit Float Ambisonics Rig",
+        "details": "Binaural sound-dampened mic capsules recording unclipped natural soundscapes",
+        "category": "Acoustic Field Sensor"
+      },
+      {
+        "id": "gear-5",
+        "item": "Gitzo Carbon 5-Series • Kwik Camo",
+        "details": "Non-reflective matte wraps • Sub-zero fluid gimbal head rated to -40°C",
+        "category": "Support & Blinds"
+      },
+      {
+        "id": "gear-6",
+        "item": "Hardware C2PA Provenance Key",
+        "details": "Cryptographic SHA-256 sensor timestamping guaranteeing authentic capture origin",
+        "category": "Digital Cryptography"
+      }
+    ]
+  },
+  "home": {
+    "badgeText": "Cryptographically Verified Wildlife Archive",
+    "heroHeadline": "Apex & Habitat Vault",
+    "heroSubtitle": "Direct-sensor RAW acquisitions cataloged across Himalayan ridges, lowland sal forests, and protected river corridors.",
+    "indexedFrames": "1,482",
+    "biomesCount": "06 Terrains",
+    "archivalFormat": "16-bit DNG"
+  },
+  "payments": {
+    "stripe": {
+      "enabled": true,
+      "mode": "test",
+      "publishableKey": "pk_test_51MockSubanWildlifeStripePublishableKey2026",
+      "secretKey": "sk_test_MockSubanWildlifeStripeSecretKey2026",
+      "webhookSecret": "whsec_mockStripeWebhookSecret2026",
+      "currency": "USD"
+    },
+    "esewa": {
+      "enabled": true,
+      "mode": "test",
+      "merchantCode": "EPAYTEST",
+      "secretKey": "8gBm/Du7G2n5MtN",
+      "serviceUrl": "https://rc-epay.esewa.com.np/api/epay/main/v2/form"
+    },
+    "fonepay": {
+      "enabled": true,
+      "mode": "sandbox",
+      "merchantCode": "FP-SUB-2026-NEPAL",
+      "apiSecret": "fonepay_secret_key_suban_wildlife",
+      "merchantName": "SUBAN Wildlife Fine Art & Conservation Archive",
+      "qrImageUrl": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80",
+      "instructions": "Scan via any Nepali Mobile Banking app (Fonepay compliant). Enter Order Number in transfer remarks."
+    },
+    "bank": {
+      "enabled": true,
+      "bankName": "Nabil Bank Limited & Standard Chartered Nepal",
+      "accountName": "SUBAN Wildlife Conservation Archive Pvt. Ltd.",
+      "accountNumber": "01-2948201-01",
+      "branchName": "Kathmandu Corporate Branch, New Road",
+      "swiftCode": "SCBLNPKA",
+      "routingNumber": "90123001",
+      "qrImageUrl": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80",
+      "instructions": "For SWIFT wire or corporate remittances. Please specify your Order Reference number as remittance narration."
+    },
+    "khalti": {
+      "enabled": true,
+      "mode": "test",
+      "publicKey": "test_public_key_dc74e0fd57cb46cd93832aee0a50774b",
+      "secretKey": "test_secret_key_f59e8b7d18b4499be4095f82a63e2920"
+    }
+  },
+  "watermark": {
+    "enabled": true,
+    "text": "© SUBAN WILDLIFE PHOTOGRAPHY",
+    "logoUrl": "data:image/svg+xml;utf8,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%2280%22%20height%3D%2280%22%20rx%3D%2216%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%224%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2262%22%20fill%3D%22%23ffffff%22%20font-size%3D%2234%22%20font-family%3D%22sans-serif%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%3ESB%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "opacity": 65,
+    "position": "tiled",
+    "size": 16,
+    "isTiled": true,
+    "margin": 15,
+    "rotation": -45,
+    "tileCount": 5,
+    "fontFamily": "mono",
+    "fontSize": 13,
+    "color": "#e2e8f0",
+    "blendMode": "normal"
+  }
+}

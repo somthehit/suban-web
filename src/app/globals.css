@@ -1,0 +1,998 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+    background-color: rgb(4, 18, 10);
+    color: rgb(232, 245, 238);
+    font-family: var(--font-inter), sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Material Symbols Outlined font standard rules */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar cleanly per Stitch design */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Text & Border glows */
+.text-glow-pink {
+  text-shadow: 0 0 8px #ff2d78, 0 0 20px rgba(255, 45, 120, 0.4);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 8px #00ffcc, 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+.text-glow-yellow {
+  text-shadow: 0 0 8px #ffe04a, 0 0 20px rgba(255, 224, 74, 0.4);
+}
+
+.text-glow-green {
+  text-shadow: 0 0 8px #00ff88, 0 0 20px rgba(0, 255, 136, 0.45);
+}
+
+.title-neon-green {
+  color: #00ff88 !important;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.75), 0 0 18px rgba(0, 255, 136, 0.4) !important;
+  transition: all 0.3s ease;
+}
+
+.group:hover .title-neon-green,
+.title-neon-green:hover {
+  color: #39ff14 !important;
+  text-shadow: 0 0 12px rgba(57, 255, 20, 0.9), 0 0 24px rgba(0, 255, 136, 0.6) !important;
+}
+
+.btn-neon-pink {
+  background-color: rgba(17, 17, 30, 0.9);
+  border: 1px solid rgba(255, 45, 120, 0.6);
+  color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-neon-pink:hover {
+  border-color: #ff2d78;
+  color: #ff2d78;
+  box-shadow: 0 0 16px rgba(255, 45, 120, 0.45);
+  text-shadow: 0 0 8px #ff2d78;
+}
+
+.btn-neon-cyan {
+  background-color: rgba(17, 17, 30, 0.9);
+  border: 1px solid rgba(0, 255, 204, 0.6);
+  color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-neon-cyan:hover {
+  border-color: #00ffcc;
+  color: #00ffcc;
+  box-shadow: 0 0 16px rgba(0, 255, 204, 0.45);
+  text-shadow: 0 0 8px #00ffcc;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LIGHT THEME DESIGN SYSTEM (Clean, Crisp Fine Art Gallery)
+   ══════════════════════════════════════════════════════════════ */
+
+html.light body {
+  background-color: #f6f9f7 !important;
+  color: #0c1f15 !important;
+}
+
+/* Page background conversions */
+html.light .bg-background,
+html.light .bg-\[\#04120a\],
+html.light .bg-\[\#020905\],
+html.light main.w-full {
+  background-color: #f6f9f7 !important;
+}
+
+html.light .bg-\[\#030e07\],
+html.light .bg-\[\#020b06\],
+html.light .bg-\[\#030d07\],
+html.light .bg-\[\#04140b\],
+html.light [class*="bg-\[\#030d07\]"],
+html.light [class*="bg-\[\#030e07\]"],
+html.light [class*="bg-\[\#020b06\]"],
+html.light [class*="bg-\[\#04140b\]"],
+html.light .bg-\[\#020b06\]\/85,
+html.light .bg-\[\#030d07\]\/60 {
+  background-color: #edf3ef !important;
+}
+
+/* Card & Surface conversions */
+html.light .bg-surface-container,
+html.light [class*="bg-surface-container"],
+html.light .bg-surface,
+html.light .bg-surface-container-lowest,
+html.light .bg-\[\#081e12\],
+html.light .bg-\[\#07190f\],
+html.light .bg-\[\#06180e\],
+html.light [class*="bg-\[\#06180e\]"] {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(12, 31, 21, 0.04);
+}
+
+html.light .bg-surface-container-high,
+html.light [class*="bg-surface-container-high"],
+html.light .bg-surface-container-low,
+html.light [class*="bg-surface-container-low"],
+html.light .bg-surface-bright,
+html.light .bg-\[\#0a2315\],
+html.light .bg-\[\#0a2416\],
+html.light [class*="bg-\[\#0a2416\]"],
+html.light .bg-\[\#0e2417\],
+html.light .bg-\[\#0e2818\],
+html.light .bg-\[\#0c2819\],
+html.light .bg-\[\#0c2617\] {
+  background-color: #edf3ef !important;
+}
+
+html.light [class*="from-surface-container"] {
+  --tw-gradient-from: #ffffff var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: #f0f5f2 var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #f6f9f7 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+html.light .bg-\[\#12301f\],
+html.light .bg-\[\#103420\],
+html.light .bg-\[\#163e26\],
+html.light .bg-\[\#163d27\],
+html.light .bg-\[\#113420\],
+html.light .bg-\[\#123822\],
+html.light .bg-\[\#07190e\],
+html.light .bg-\[\#020b05\] {
+  background-color: #e5ede8 !important;
+}
+
+/* Header & Navigation blur backgrounds */
+html.light header.sticky,
+html.light .bg-\[\#04120a\]\/90,
+html.light .bg-\[\#04120a\]\/80 {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(16px);
+  border-bottom-color: #d8e5de !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+}
+
+html.light .bg-\[\#030e07\]\/90 {
+  background-color: rgba(246, 249, 247, 0.96) !important;
+  border-bottom-color: #d8e5de !important;
+}
+
+/* Borders */
+html.light .border-\[\#163e26\],
+html.light .border-\[\#1a442a\],
+html.light .border-\[\#163e26\]\/60,
+html.light .border-\[\#163e26\]\/80,
+html.light .border-\[\#302840\]\/60,
+html.light .border-outline,
+html.light .border-outline-variant {
+  border-color: #d3e2d9 !important;
+}
+
+html.light .border-\[\#00ffcc\]\/15,
+html.light .border-\[\#00ffcc\]\/20,
+html.light .border-\[\#00ffcc\]\/30 {
+  border-color: rgba(0, 135, 105, 0.22) !important;
+}
+
+html.light .divide-\[\#163e26\]\/60 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #dbe7e0 !important;
+}
+
+/* Typography in Light Mode */
+html.light .text-\[\#e8e0f0\],
+html.light .text-on-surface,
+html.light [class*="text-on-surface"]:not(.text-white):not([class*="text-white"]):not([class*="group-hover:text-white"]):not([class*="hover:text-white"]):not([class*="text-primary"]):not([class*="text-secondary"]):not([class*="text-tertiary"]),
+html.light [class*="text-\[\#e8e0f0\]"]:not(.text-white):not([class*="text-white"]):not([class*="group-hover:text-white"]):not([class*="hover:text-white"]) {
+  color: #0c1f15 !important;
+}
+
+html.light h1:not([class*="bg-clip-text"]):not(.text-white):not([class*="text-white"]):not([class*="title-neon-green"]):not([class*="text-neon"]),
+html.light h2:not([class*="bg-clip-text"]):not(.text-white):not([class*="text-white"]):not([class*="title-neon-green"]):not([class*="text-neon"]),
+html.light h3:not([class*="bg-clip-text"]):not(.text-white):not([class*="text-white"]):not([class*="title-neon-green"]):not([class*="text-neon"]),
+html.light h4:not([class*="bg-clip-text"]):not(.text-white):not([class*="text-white"]):not([class*="title-neon-green"]):not([class*="text-neon"]) {
+  color: #0c1f15;
+}
+
+html.light .title-neon-green {
+  color: #00875a !important;
+  text-shadow: 0 0 1px #00ff88, 0 0 8px rgba(0, 255, 136, 0.35) !important;
+}
+
+html.light .group:hover .title-neon-green,
+html.light .title-neon-green:hover {
+  color: #009e5e !important;
+  text-shadow: 0 0 2px #00ff88, 0 0 14px rgba(0, 255, 136, 0.5) !important;
+}
+
+/* Explicitly preserve text-white on dark buttons, badges, and photo overlays */
+.text-white {
+  color: #ffffff;
+}
+
+html.light button.btn-neon-pink,
+html.light button.btn-neon-cyan,
+html.light [class*="btn-"]:not(.bg-white):not([class*="bg-white"]):not(.text-green-btn),
+html.light .bg-primary:not(.bg-white):not([class*="bg-white"]),
+html.light .bg-\[\#ff2d78\]:not(.bg-white):not([class*="bg-white"]),
+html.light .bg-emerald-600,
+html.light .bg-emerald-700,
+html.light .bg-emerald-800,
+html.light .bg-red-600,
+html.light .bg-black:not(.bg-white):not([class*="bg-white"]),
+html.light .bg-neutral-900:not(.bg-white):not([class*="bg-white"]),
+html.light .photo-card-dark,
+html.light .photo-card-dark *:not(.bg-white):not([class*="bg-white"]):not(.text-green-btn) {
+  color: #ffffff !important;
+}
+
+/* Explicit rule for buttons and elements with white background and green text */
+.bg-white.text-green-btn,
+html.light .bg-white.text-green-btn,
+html.dark .bg-white.text-green-btn,
+.bg-white.text-green-btn > span,
+html.light .bg-white.text-green-btn > span,
+html.dark .bg-white.text-green-btn > span,
+.bg-white.text-\[\#008769\],
+html.light .bg-white.text-\[\#008769\],
+html.dark .bg-white.text-\[\#008769\],
+.bg-white.text-\[\#008769\] > span,
+html.light .bg-white.text-\[\#008769\] > span,
+html.dark .bg-white.text-\[\#008769\] > span {
+  color: #008769 !important;
+}
+
+.bg-white.text-green-btn:hover,
+html.light .bg-white.text-green-btn:hover,
+html.dark .bg-white.text-green-btn:hover,
+.bg-white.text-green-btn:hover > span,
+html.light .bg-white.text-green-btn:hover > span,
+html.dark .bg-white.text-green-btn:hover > span,
+.bg-white.text-\[\#008769\]:hover,
+html.light .bg-white.text-\[\#008769\]:hover,
+html.dark .bg-white.text-\[\#008769\]:hover,
+.bg-white.text-\[\#008769\]:hover > span,
+html.light .bg-white.text-\[\#008769\]:hover > span,
+html.dark .bg-white.text-\[\#008769\]:hover > span {
+  color: #ffffff !important;
+}
+
+/* Hero slider metadata badge and overlay controls */
+.hero-slider-badge .slider-title,
+html.light .hero-slider-badge .slider-title,
+html.dark .hero-slider-badge .slider-title,
+.hero-slider-badge [class*="slider-title"] {
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+.hero-slider-badge .slider-specs,
+html.light .hero-slider-badge .slider-specs,
+html.dark .hero-slider-badge .slider-specs,
+.hero-slider-badge [class*="slider-specs"] {
+  color: #00ffcc !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8) !important;
+}
+
+.hero-slider-badge button,
+.hero-slider-badge button span,
+html.light .hero-slider-badge button,
+html.light .hero-slider-badge button span {
+  color: #ffffff !important;
+}
+
+/* In light mode on light cards, ensure default text-white doesn't bleach into background */
+html.light .text-white:not(button):not([class*="btn-"]):not([class*="bg-primary"]):not([class*="bg-[#ff2d78]"]):not([class*="bg-emerald"]):not([class*="bg-red"]):not([class*="bg-black"]):not([class*="bg-neutral-900"]):not(.photo-card-dark):not([data-hero-btn]):not(.hero-slider-badge):not(.hero-slider-badge *):not(.slider-title):not(.slider-specs) {
+  color: #0c1f15;
+}
+
+html.light .text-white\/90,
+html.light [class*="text-white\/90"] {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+html.light .text-white\/80,
+html.light [class*="text-white\/80"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+html.light .text-white\/70,
+html.light [class*="text-white\/70"] {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+html.light .text-white\/60,
+html.light [class*="text-white\/60"] {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Photo cards with image backgrounds always retain white text */
+.photo-card-dark h1,
+.photo-card-dark h2,
+.photo-card-dark h3,
+.photo-card-dark h4,
+.photo-card-dark p,
+html.light .photo-card-dark h1,
+html.light .photo-card-dark h2,
+html.light .photo-card-dark h3,
+html.light .photo-card-dark h4,
+html.light .photo-card-dark p {
+  color: #ffffff !important;
+}
+
+html.light .text-\[\#a098b0\],
+html.light .text-on-surface-variant,
+html.light [class*="text-on-surface-variant"]:not(.text-white):not([class*="text-white"]):not([class*="group-hover:text-white"]):not([class*="hover:text-white"]):not([class*="text-primary"]):not([class*="text-secondary"]):not([class*="text-tertiary"]),
+html.light [class*="text-\[\#a098b0\]"]:not(.text-white):not([class*="text-white"]):not([class*="group-hover:text-white"]):not([class*="hover:text-white"]) {
+  color: #3b5043 !important;
+}
+
+/* Accents adapted for high contrast readability in light mode (only on normal surfaces) */
+html.light .text-\[\#00ffcc\],
+html.light .text-secondary {
+  color: #008769;
+}
+
+html.light .text-\[\#ffe04a\],
+html.light .text-tertiary {
+  color: #9c6c00;
+}
+
+html.light .text-\[\#ff2d78\] {
+  color: #d81159;
+}
+
+/* Forms & Inputs */
+html.light input:not([type="checkbox"]):not([type="radio"]),
+html.light textarea,
+html.light select {
+  background-color: #ffffff !important;
+  color: #0c1f15 !important;
+  border-color: #cfded5 !important;
+}
+
+html.light input:focus,
+html.light textarea:focus,
+html.light select:focus {
+  border-color: #008769 !important;
+  box-shadow: 0 0 0 2px rgba(0, 135, 105, 0.15) !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #829a8d !important;
+}
+
+/* Table rows */
+html.light tbody tr:hover {
+  background-color: #f0f5f2 !important;
+}
+
+html.light thead {
+  background-color: #edf3ef !important;
+  color: #455d4f !important;
+}
+
+/* Button & interactive states */
+html.light .hover\:bg-\[\#081e12\]:hover {
+  background-color: #f0f5f2 !important;
+}
+
+html.light .hover\:bg-\[\#163e26\]:hover {
+  background-color: #e2ede6 !important;
+}
+
+html.light .hover\:bg-\[\#0c2819\]:hover {
+  background-color: #e9f2ed !important;
+}
+
+html.light .hover\:text-\[\#e8e0f0\]:hover {
+  color: #0c1f15 !important;
+}
+
+/* Hero photography backdrop: text remains bright and crisp over the photo */
+html.light #hero-bg ~ div h1,
+html.light #hero-bg ~ div p {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+html.light #hero-bg ~ div h1 span.text-primary {
+  color: #ff2d78 !important;
+}
+
+html.light #hero-bg ~ div h1 span.text-secondary {
+  color: #00ffcc !important;
+}
+
+html.light .btn-neon-pink {
+  background-color: #ffffff;
+  border-color: #d81159;
+  color: #d81159;
+  box-shadow: 0 2px 8px rgba(216, 17, 89, 0.15);
+}
+
+
+html.light .btn-neon-pink:hover {
+  background-color: #d81159;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(216, 17, 89, 0.35);
+  text-shadow: none;
+}
+
+html.light .btn-neon-cyan {
+  background-color: #ffffff;
+  border-color: #008769;
+  color: #008769;
+  box-shadow: 0 2px 8px rgba(0, 135, 105, 0.15);
+}
+
+html.light .btn-neon-cyan:hover {
+  background-color: #008769;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 135, 105, 0.35);
+  text-shadow: none;
+}
+
+/* Card & Section surface classes */
+.card-surface {
+  background-color: rgb(10, 35, 21);
+  border: 1px solid rgb(26, 68, 42);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-surface {
+  background-color: rgba(8, 28, 16, 0.7);
+  border: 1px solid rgba(0, 255, 204, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.newsletter-banner {
+  background: linear-gradient(135deg, rgb(8, 28, 16) 0%, rgb(13, 40, 24) 100%);
+  border: 1px solid rgba(0, 255, 204, 0.2);
+}
+
+.newsletter-form {
+  background-color: rgba(12, 43, 26, 0.85);
+  border: 1px solid rgb(26, 68, 42);
+}
+
+.newsletter-input {
+  background-color: rgb(7, 26, 15);
+  border: 1px solid rgb(20, 57, 34);
+}
+
+/* Light mode card & surface conversions */
+html.light .card-surface,
+html.light .bg-surface-container,
+html.light .bg-surface,
+html.light .bg-surface-container-lowest,
+html.light .bg-\[\#081e12\],
+html.light .bg-\[\#081e13\],
+html.light .bg-\[\#081d11\],
+html.light .bg-\[\#071c10\],
+html.light .bg-\[\#07190f\],
+html.light .bg-\[\#0d2316\],
+html.light .bg-\[\#0d2b1a\],
+html.light .bg-\[\#0a2416\],
+html.light .bg-\[\#06170d\],
+html.light .bg-\[\#07190e\] {
+  background-color: #ffffff !important;
+  border-color: #d3e2d9 !important;
+  box-shadow: 0 4px 20px rgba(12, 31, 21, 0.05) !important;
+}
+
+html.light .card-surface:hover {
+  background-color: #f7faf8 !important;
+  border-color: #008769 !important;
+}
+
+/* Detail page licensing option cards in light mode */
+html.light label:has(input[name="license_tier"]:not(:checked)) {
+  background-color: #ffffff !important;
+  border-color: #d3e2d9 !important;
+  color: #0c1f15 !important;
+}
+
+html.light label:has(input[name="license_tier"]:not(:checked)):hover {
+  background-color: #f7faf8 !important;
+  border-color: #008769 !important;
+}
+
+html.light label:has(input[name="license_tier"]:checked) {
+  background-color: #f4faf6 !important;
+}
+
+/* Instant Checkout button in light mode */
+html.light a[href*="instant=true"] {
+  background-color: #008769 !important;
+  color: #ffffff !important;
+  border-color: #008769 !important;
+  box-shadow: 0 4px 14px rgba(0, 135, 105, 0.25) !important;
+}
+
+html.light a[href*="instant=true"]:hover {
+  background-color: #007056 !important;
+  box-shadow: 0 6px 18px rgba(0, 135, 105, 0.35) !important;
+}
+
+html.light .section-surface {
+  background-color: #ffffff !important;
+  border-color: #d3e2d9 !important;
+  box-shadow: 0 4px 24px rgba(12, 31, 21, 0.04) !important;
+}
+
+html.light .newsletter-banner {
+  background: linear-gradient(135deg, #f0f7f3 0%, #e2eee6 100%) !important;
+  border-color: #c5ded1 !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04) !important;
+}
+
+html.light .newsletter-form {
+  background-color: #ffffff !important;
+  border: 1px solid #cfded5 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+
+html.light .newsletter-input {
+  background-color: #f7faf8 !important;
+  border: 1px solid #cfded5 !important;
+  color: #0c1f15 !important;
+}
+
+/* Hardcoded inline styled elements mapped to clean light surfaces */
+html.light [style*="rgb(8, 28, 16)"],
+html.light [style*="rgb(9, 32, 19)"],
+html.light [style*="rgb(10, 35, 21)"],
+html.light [style*="rgb(12, 43, 26)"],
+html.light [style*="rgb(13, 40, 24)"],
+html.light [style*="rgba(8, 28, 16"],
+html.light [style*="rgba(10, 35, 21"],
+html.light [style*="rgba(12, 43, 26"],
+html.light [style*="rgba(13, 40, 24"],
+html.light [style*="#0c2819"],
+html.light [style*="#081e12"],
+html.light [style*="#0d2316"] {
+  background-color: #ffffff !important;
+  border-color: #d2e0d7 !important;
+}
+
+/* Quote block and white inline text converted in light mode */
+html.light blockquote {
+  color: #0c1f15 !important;
+}
+
+html.light [style*="rgb(232, 245, 238)"] {
+  color: #0c1f15 !important;
+}
+
+/* Absolute photo overlays & Hero photograph overlays: text MUST ALWAYS remain bright white & vivid neon */
+article .relative .absolute h2,
+article .relative .absolute .font-headline,
+html.light article .relative .absolute h2,
+html.light article .relative .absolute .font-headline,
+html.light article .relative .absolute [class*="text-[#e8e0f0]"],
+html.light article .relative .absolute [class*="text-on-surface"] {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8) !important;
+}
+
+article .relative .absolute .text-\[\#00ffcc\],
+article .relative .absolute .text-\[\#00ffcc\] *,
+article .relative .absolute .text-secondary,
+html.light article .relative .absolute .text-\[\#00ffcc\],
+html.light article .relative .absolute .text-\[\#00ffcc\] *,
+html.light article .relative .absolute .text-secondary,
+#hero-bg ~ div .text-\[\#00ffcc\],
+#hero-bg ~ div .text-\[\#00ffcc\] *,
+html.light #hero-bg ~ div .text-\[\#00ffcc\],
+html.light #hero-bg ~ div .text-\[\#00ffcc\] * {
+  color: #00ffcc !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9) !important;
+}
+
+article .relative .absolute .text-\[\#ff2d78\],
+html.light article .relative .absolute .text-\[\#ff2d78\] {
+  color: #ff2d78 !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Portrait photo overlay & about hero portrait: text MUST ALWAYS remain bright white */
+.portrait-overlay,
+.portrait-overlay *,
+[class*="aspect-"] ~ div.absolute .font-headline:not([class*="neon"]),
+html.light [class*="aspect-"] ~ div.absolute .font-headline:not([class*="neon"]),
+[class*="aspect-"] ~ div.absolute [class*="text-white"],
+html.light [class*="aspect-"] ~ div.absolute [class*="text-white"] {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* TipTap ProseMirror Editorial Styling */
+.tiptap.ProseMirror {
+  outline: none;
+  min-height: 380px;
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: #e8e0f0;
+}
+
+.tiptap.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #6a6278;
+  pointer-events: none;
+  height: 0;
+  font-style: italic;
+}
+
+.tiptap.ProseMirror h1 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tiptap.ProseMirror h2 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(22, 62, 38, 0.6);
+  padding-bottom: 0.5rem;
+}
+
+.tiptap.ProseMirror h3 {
+  font-size: 1.35rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #00ffcc;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tiptap.ProseMirror p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.tiptap.ProseMirror blockquote {
+  border-left: 3px solid #00ffcc;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #c0fff4;
+  background-color: rgba(8, 30, 18, 0.6);
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.tiptap.ProseMirror ul {
+  list-style-type: disc;
+  padding-left: 1.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.tiptap.ProseMirror ol {
+  list-style-type: decimal;
+  padding-left: 1.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.tiptap.ProseMirror li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.tiptap.ProseMirror hr {
+  border: none;
+  border-top: 1px solid #163e26;
+  margin: 2.5rem 0;
+}
+
+.tiptap.ProseMirror pre {
+  background: #05170d;
+  border: 1px solid #163e26;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  color: #a7f3d0;
+  font-family: monospace;
+  font-size: 0.875rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.tiptap.ProseMirror code:not(pre code) {
+  background: rgba(8, 30, 18, 0.9);
+  border: 1px solid rgba(0, 255, 204, 0.2);
+  color: #00ffcc;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+  font-size: 0.875em;
+  font-family: monospace;
+}
+
+.tiptap.ProseMirror a {
+  color: #00ffcc;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+.tiptap.ProseMirror a:hover {
+  color: #c0fff4;
+}
+
+.tiptap.ProseMirror img {
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #163e26;
+  margin: 1.5rem 0;
+}
+
+/* Light mode rules for TipTap ProseMirror */
+html.light .tiptap.ProseMirror {
+  color: #0f172a;
+}
+
+/* Placeholder contrast >= 4.5:1 (WCAG AA Compliant) */
+.tiptap.ProseMirror p.is-editor-empty:first-child::before {
+  color: #94a3b8 !important; /* 6.5:1 contrast against dark background #081e12 */
+  font-style: normal;
+}
+
+html.light .tiptap.ProseMirror p.is-editor-empty:first-child::before {
+  color: #475569 !important; /* 5.4:1 contrast against pure white #ffffff */
+  font-style: normal;
+}
+
+html.light .tiptap.ProseMirror h1,
+html.light .tiptap.ProseMirror h2 {
+  color: #0f172a;
+  border-color: #e2e8f0;
+}
+
+html.light .tiptap.ProseMirror h3 {
+  color: #047857;
+}
+
+html.light .tiptap.ProseMirror blockquote {
+  border-left-color: #059669;
+  background-color: #f0fdf4;
+  color: #064e3b;
+}
+
+html.light .tiptap.ProseMirror pre {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+html.light .tiptap.ProseMirror code:not(pre code) {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+html.light .tiptap.ProseMirror a {
+  color: #059669;
+}
+
+/* Paper-white canvas surface in light mode */
+html.light .tiptap-canvas-container {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 25px -4px rgba(0, 0, 0, 0.07), 0 2px 10px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Cover dropzone in light mode */
+html.light .tiptap-cover-dropzone {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light .tiptap-cover-dropzone:hover {
+  border-color: #059669 !important;
+  background-color: #f8fafc !important;
+}
+
+/* Toolbar in light mode */
+html.light .tiptap-toolbar {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+html.light .tiptap-toolbar button {
+  color: #475569;
+}
+
+html.light .tiptap-toolbar button:hover {
+  color: #0f172a;
+  background-color: #f1f5f9;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ADMIN GATEWAY & AUTH THEME STYLING
+   ══════════════════════════════════════════════════════════════ */
+
+.admin-gateway-canvas {
+  background-color: #020b05;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+html.light .admin-gateway-canvas {
+  background-color: #f4f7f5 !important;
+  color: #0f172a !important;
+}
+
+.admin-gateway-card {
+  background-color: rgba(5, 23, 13, 0.95);
+  border: 1px solid #163e26;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85), 0 0 1px rgba(16, 185, 129, 0.2);
+}
+html.light .admin-gateway-card {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border: 1px solid rgba(203, 213, 225, 0.8) !important;
+  box-shadow: 0 20px 50px -10px rgba(12, 35, 20, 0.08), 0 0 1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.admin-gateway-input {
+  background-color: #031108;
+  border: 1px solid #163e26;
+  color: #f8fafc;
+}
+.admin-gateway-input::placeholder {
+  color: #52665a;
+}
+html.light .admin-gateway-input {
+  background-color: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+html.light .admin-gateway-input::placeholder {
+  color: #94a3b8 !important;
+}
+html.light .admin-gateway-input:focus {
+  background-color: #ffffff !important;
+  border-color: #059669 !important;
+  box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.15) !important;
+}
+
+.admin-gateway-input:-webkit-autofill,
+.admin-gateway-input:-webkit-autofill:hover,
+.admin-gateway-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: inherit;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.admin-gateway-badge {
+  background-color: #061d10;
+  border: 1px solid #163e26;
+  color: #34d399;
+}
+html.light .admin-gateway-badge {
+  background-color: #ecfdf5 !important;
+  border: 1px solid #a7f3d0 !important;
+  color: #065f46 !important;
+}
+
+.admin-gateway-btn {
+  background-color: #10b981;
+  color: #021a0d;
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.35);
+}
+.admin-gateway-btn:hover {
+  background-color: #34d399;
+  box-shadow: 0 0 32px rgba(16, 185, 129, 0.5);
+}
+html.light .admin-gateway-btn {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 18px rgba(5, 150, 105, 0.3) !important;
+}
+html.light .admin-gateway-btn:hover {
+  background-color: #047857 !important;
+  box-shadow: 0 6px 24px rgba(5, 150, 105, 0.4) !important;
+}
+
+.admin-gateway-label {
+  color: #34d399;
+}
+html.light .admin-gateway-label {
+  color: #065f46 !important;
+}
+
+.admin-gateway-heading {
+  color: #f8fafc;
+}
+html.light .admin-gateway-heading {
+  color: #0f172a !important;
+}
+
+.admin-gateway-subtext {
+  color: #94a3b8;
+}
+html.light .admin-gateway-subtext {
+  color: #64748b !important;
+}
+
+.admin-gateway-navlink {
+  background-color: rgba(6, 25, 14, 0.6);
+  border: 1px solid #163e26;
+  color: #94a3b8;
+}
+.admin-gateway-navlink:hover {
+  color: #34d399;
+  border-color: #10b981;
+}
+html.light .admin-gateway-navlink {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #475569 !important;
+}
+html.light .admin-gateway-navlink:hover {
+  color: #059669 !important;
+  border-color: #059669 !important;
+}
+
+.admin-gateway-pill-footer {
+  background-color: rgba(6, 31, 17, 0.6);
+  border: 1px solid #174828;
+  color: #a7f3d0;
+}
+html.light .admin-gateway-pill-footer {
+  background-color: #f0fdf4 !important;
+  border: 1px solid #bbf7d0 !important;
+  color: #166534 !important;
+}
+
+
+
+
+
